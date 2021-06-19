@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello</title>
+</head>
+<body>
+    <div class="container">
+        <div class="m-3">
+            <h1 class="header">Form Validation</h1>
+            <div class="row mt-3">
+                <div class="col-md-8 mx-auto">
+                    <h6>User name :
+                        <span id="userName"><i>plase enter user name</i></span>
+                    </h6>
+                    <h6>Password : 
+                        <span id="password"><i>plase enter password</i></span>
+                    </h6>
+                    <hr>
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="userNameForm">Username</label>
+                            <input type="text" name="username" class="form-control" id="userNameForm" placeholder="Enter an username">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="passwordForm">Password</label>
+                            <input type="password" name="password" class="form-control" id="passwordForm" placeholder="Enter a password">
+                        </div>
+                        <br>
+                        <input class="btn btn-success" type="submit" name="submit" value="send">
+                    </form>
+                    <hr>
+                    <h6>Password : 
+                        <span id="seePassword"><i>see password</i></span>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    
+</body>
+</html>

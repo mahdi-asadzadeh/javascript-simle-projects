@@ -1,0 +1,21 @@
+.scroll {
+    background-image: url('./icon.svg');
+    background-color: red;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    border: 0;
+    border-radius: 50%;
+    position: fixed ;
+    right: 20px;
+    bottom: 20px;
+    cursor: auto !important;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.scroll.show {
+    cursor: pointer !important;
+    opacity: 1;
+}

@@ -1,0 +1,58 @@
+.accordions > div > span:hover {
+    background-color: #ccc;
+}
+
+.accordions > div > span {
+    display: block;
+    background-color: #eee;
+    padding: 15px;
+    border-bottom: 0.5px solid #ccc;
+}
+
+.accordions  > div > span:after {
+    content: '\002B';
+    float: right;
+}
+
+.accordions > div.show > span:after{
+    content: '\2212';
+    float: right;
+
+}
+
+.accordions > div:first-child > span {
+    border-radius: 10px 10px 0 0 ;
+}
+
+.accordions > div:last-child > span {
+    border-radius: 0 0 10px 10px ;
+    border-bottom: 0;
+}
+
+.accordions > div.show:last-child > span {
+    border-radius: 0;
+    border-bottom: 0;
+    
+}
+
+.accordions > div.show:last-child > div {
+    border-bottom: 0.5px solid #ccc;
+    border-radius: 0 0 10px 10px ;
+}
+
+.accordions > div > div {
+    border-right: 0.1px solid rgb(223, 223, 223);
+    border-left: 0.1px solid rgb(223, 223, 223);
+    overflow: hidden;  
+    max-height: 0;
+    transition: all 0.5s;
+    padding: 0 15px;
+}
+
+.accordions > div.show > div {
+    padding: 15px;  
+}
+
+.accordions > div.show > span {
+    background-color: #ccc;
+}
